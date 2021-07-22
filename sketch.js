@@ -17,11 +17,7 @@ function draw() {
   if (random(1) < 0.03) {
     fireworks.push(new Firework());
   }
-
-  textSize(30);
-  text("I am sorry", 100, 200);
-
-
+  
   for (var i = fireworks.length - 1; i >= 0; i--) {
     fireworks[i].update();
     fireworks[i].show();
